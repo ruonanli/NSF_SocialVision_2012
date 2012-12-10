@@ -1,4 +1,4 @@
-\subsubsection{Robust Reconstruction of Incomplete Networks}
+\subsubsection{Noisy and incomplete network reconstruction}
 \label{sec:reconstruct}
 
 A second realistic condition, in particular relevant for our visual sensing paradigm, is that the social networks are usually noisy and partially observed, meaning that not all links/affinities from all views are accurate and `visible'. Some links, i.e., edges in the graph cannot be evaluated with a weight, for example, because of the incapability of the vision function on a particular image, resulting in incomplete graphs.
@@ -16,7 +16,7 @@ The answer is YES. We have proved the following theorem, which implies that arbi
 
 The above theorem provides theoretical guarantee that each member (node) can be uniquely identified with a point in a Euclidean space, because now the Euclidean embedded nodes $\vx_i$'s and the generic social network representation $G$ are naturally related as
 \begin{equation}\label{eq:embed}
-d^{(v)}(\vx_i, \vx_j, \theta^{(v)})=(\frac{1}{A^{(v)}(i,j)^2}+c^{(v)})^{\frac{1}{2}}+\epsilon_{ijv}, \forall Q^{(v)}(i,j)=1,
+d^{(v)}(\vx_i, \vx_j, \theta^{(v)})=(\frac{1}{A^{(v)}(i,j)^2}+c^{(v)})^{\frac{1}{2}}+\epsilon^{(v)}_{ij}, \forall Q^{(v)}(i,j)=1,
 \end{equation}
 where $d^{(v)}(\cdot, \cdot, \theta^{(v)})$ is a properly defined distance in the Euclidean space specific to the $v$th view with parameter $\theta^{(v)}$, and $\epsilon$ is a residual. Meanwhile, the community structure, as the social network prior, may consequently  be modeled in the Euclidean space as well, for example, via
 \begin{equation}\label{eq:kmeans}

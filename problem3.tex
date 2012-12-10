@@ -34,7 +34,7 @@ We argue that cross-view compatibility and within-view clustering are essential 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Robust Face Identity Association}
+\subsubsection{Associating identities with image targets}
 \label{sec:assoc}
 
 To obtain the low-level visual descriptions $\vy^s$ between individual $i$ and individual $j$, we must first identify the two individuals from the detections in images or tracks in videos. While the state-of-art face recognizer has achieved compellingly outstanding performance even for the faces `in the wild', there always remain ambiguities and errors. Suppose that from an image we have detected $L$ faces or from a video we have tracked $L$ faces, and we must assign each of these $L$ targets to one of the possible $K$ identities of interest for the social network estimation approach to work. We propose to explore robust algorithms that may properly handle the non-robustness of a face recognizer and provide identity assignments that are less sensitive to the erroneous output from a face recognizer.

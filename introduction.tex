@@ -13,7 +13,8 @@ The past decade has produced stunning advances in computer vision. Real-time fac
 
 If the purpose of computer vision is to extract from image data useful information about the world, it is clear that we now have useful, functioning vision systems for certain types of information. Yet, there are aspects of the world to which computer vision systems, relative to their human counterparts, remain quite blind. Prominent among these are the \emph{social interactions} and \emph{social relationships} between people. This is information is critical for humans as they navigate the world, making decisions about which table to join at a banquet; which schoolmates to invite to a dinner party; which colleagues to approach to enact change; or whether or not to intervene in a questionable interaction between strangers.
 
-We propose to develop foundations for computer vision systems that are socially aware. These systems will extract, from images and videos of human gatherings, useful information about the types of social interactions that occur within these gatherings. And by enumerating the different types of interactions that occur over time in large image and video collections, they will extract useful information about the underlying \emph{social network}---the set of social relationships that exist among the observed individuals, groups, and communities.
+
+We propose to develop foundations for computer vision systems that are socially aware. These systems will extract, from images and videos of human gatherings, useful information about the types of social interactions that occur within these gatherings. And by enumerating the different types of interactions that occur over time in large image and video collections, they will extract useful information about the underlying \emph{social network}---the set of social relationships that exist among the observed individuals, groups, and communities. In other words, we seek to use computer vision systems as a new `sensor' from which we recover the underlying social network (Fig. \ref{fig:intro}).
 
 Why is vision an important source of social network information? Social network information can come from various sources, but vision is an important one. Facial expressions, gestures, and body poses are critical signals for understanding the interactions and relationships between people, and the only way to get these are from images and videos. Also, it is not just important to understand the type of interaction, but also the context of the scene in which it occurs.
 
@@ -24,6 +25,14 @@ Our project has three main parts:
 2. Inferring social network information from detected interactions. We will design mechanisms by which we distill ties or affinities between social members from multiple heterogeneous visual cues, and in particular accounting for the multi-view effect in a practical social network. To achieve robustness, our research will especially focus on noise-resilient methods for mapping image targets to the identities of the members, as well as novel algorithms to the case of incomplete and noisy outputs from the social network estimator due to various types of imperfection incurred from missed detections; mis-classified interactions, and a large fraction of missing observations.
 
 3. Data collections and challenge problems. We will collect datasets to evaluate our methods and design challenge problems to engage our colleagues in this research agenda. To do this, we will address the challenges of enabling reproducible research while preserving privacy.
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=\columnwidth]{intro}
+\end{center}
+\vspace{-0.25in} \caption{\captionsize 
+Social visual analytics: A computer vision approach to `sense' a social network. \label{fig:intro}\afterfigspace}
+\end{figure}
 
 This lays the foundation for socially-aware computer vision systems. These systems will transform security, anti-terrorism, autonomous visual analytics, augmented reality, human computer interaction, human resource planning, operations research, game theory and e-commerce, and identify recognition. 
 
