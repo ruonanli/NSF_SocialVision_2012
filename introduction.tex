@@ -9,7 +9,15 @@ Yet, there are aspects of the world to which computer vision systems remain quit
 
 We propose to develop foundations for computer vision systems that are socially aware, in the sense of being able to recover social information from imagery. These systems will extract, from images and videos of human gatherings,  information about the types and frequencies of social interactions that occur within these gatherings, and from this they will compute useful information about the social network that embeds the observed individuals, groups, and communities.  Our work will introduce computer vision as a new source of social network information, one that complements email logs, phone logs, web-based community connections, and so on. Vision is an important complement to these because it provides access to relative face positions, body positions, movements, gestures, and expressions, all of which are difficult to observe by any other means, and all of which are critical signals for analyzing interactions and relationships between people. 
 
-Our research is timely because of the recent maturation of technologies for detecting and tracking the faces and bodies of individual people and recognizing their identities. A variety of practical systems currently exist for face detection and person detection, and by integrating these with tracking techniques in monocular systems or camera arrays, these can yield crude but useful descriptors of individual behaviors in the form of positions, velocities, histograms-of-flow, bags of space-time interest points, and so on. When resolution and image quality permits, these can also be augmented with more detailed per-individual descriptors computed from head pose, facial expression, and body pose. In any case, with environment-appropriate detection and tracking, along with the extraction of suitable descriptors for the detected and tracked individuals, an image or video can be abstracted as a collection of (fragmented and noisy) individual trajectories with accompanying time-varying behavior descriptors (see ${\bf f}_i$ and ${\bf f}_i(t)$ in Fig.~\ref{fig:overview}\todd{Add the picture here}). And this is the abstraction on which our proposed methods will operate.
+Our research is timely because of the recent maturation of technologies for detecting and tracking the faces and bodies of individual people and recognizing their identities. A variety of practical systems currently exist for face detection and person detection, and by integrating these with tracking techniques in monocular systems or camera arrays, these can yield crude but useful descriptors of individual behaviors in the form of positions, velocities, histograms-of-flow, bags of space-time interest points, and so on. When resolution and image quality permits, these can also be augmented with more detailed per-individual descriptors computed from head pose, facial expression, and body pose. In any case, with environment-appropriate detection and tracking, along with the extraction of suitable descriptors for the detected and tracked individuals, an image or video can be abstracted as a collection of (fragmented and noisy) individual trajectories with accompanying (time-varying) behavior descriptors (see ${\bf f}$ for still image and ${\bf f}(t)$ for video in Fig.~\ref{fig:intro}). And this is the abstraction on which our proposed methods will operate.
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=\columnwidth]{intro_1}
+\end{center}
+\vspace{-0.25in} \caption{\captionsize 
+Social visual analytics: A computer vision approach to `sense' a social network. \label{fig:intro}\afterfigspace}
+\end{figure}
 
 Our project can be described in four parts:
 \begin{enumerate}
@@ -35,13 +43,7 @@ Our goal is to enable the automatic recovery of useful information about social 
 \end{enumerate}
 }
 
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=\columnwidth]{intro}
-\end{center}
-\vspace{-0.25in} \caption{\captionsize 
-Social visual analytics: A computer vision approach to `sense' a social network. \label{fig:intro}\afterfigspace}
-\end{figure}
+
 
 The proposed research will provide a foundation for socially-aware computer vision systems. These systems will transform security, anti-terrorism, autonomous visual analytics, augmented reality, human computer interaction, human resource planning, operations research, game theory and e-commerce, and identify recognition. The research will be carried out by a team with established expertise in recognition of identities, activities, and interactions, as well as collecting and analyzing social image and video collections. PI Todd Zickler has pioneered research on the use of social network context to improve identity recognition~\cite{Stone2008,Stone2010} and led the implementation of a camera-based system for long-term observation of social interactions in an interactive classrooms (Section~\ref{sec:sys}). PI Ruonan Li has substantial expertise in group interactions recognition~\cite{LiIJCV2012}, analyzing human activities and behaviors~\cite{Li2010,LiPAMI2012}, and domain adaptation methods for learning appearance models when annotated training data is difficult or expensive to acquire~\cite{LiZickler2012,Li2011}. 
 
