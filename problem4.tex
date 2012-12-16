@@ -18,9 +18,9 @@ The answer is YES. We have proved the following theorem, which implies that arbi
 
 The above theorem provides theoretical guarantee that each member (node) can be uniquely identified with a point in a Euclidean space, because now the Euclidean embedded nodes $\vx_i$'s and the generic social network representation $G$ are naturally related as
 \begin{equation}\label{eq:embed}
-(\vx_i-\vx_j)^{T}\Sigma^{(v)}(\vx_i-\vx_j)=(\frac{1}{A^{(v)}(i,j)^2}+c^{(v)})^{\frac{1}{2}}+\epsilon^{(v)}_{ij}, \forall Q^{(v)}(i,j)=1,
+(\vx_i-\vx_j)^{T}\Sigma^{(v)}(\vx_i-\vx_j)=\left(\frac{1}{A^{(v)}(i,j)^2}+c^{(v)}\right)^{\frac{1}{2}}+\epsilon^{(v)}_{ij}, \forall Q^{(v)}(i,j)=1,
 \end{equation}
-where $\Sigma^{(v)}$ is a symmetric semi-positive definite matrix specific to the $v$th view and $\epsilon$ is a residual. The technique that we adopt is new when compared to existing embedding ideas \cite{Hoff01latentspace,Hancocklatent}, multi-view networks \cite{AiroldiBFX08,Kim12}, and network completion \cite{Clauset,Guimera,HannekeX09,KimL11}, because it seamlessly unifies Eucliean embedding, multi-views, and missing data together, and more effectively exploits mutual contexts among view rather than other generic network constraints, which has not been attempted by existing social network research. In fact, any application-dependent network priors or regularizations are straightforward to be characterized through the embedded points $\vx_i$'s. 
+where $\Sigma^{(v)}$ is a symmetric semi-positive definite matrix specific to the $v$th view and $\epsilon$ is a residual. The technique that we adopt is new when compared to existing embedding ideas \cite{Hoff01latentspace,Hancocklatent}, multi-view networks \cite{AiroldiBFX08,Kim12}, and network completion \cite{Clauset,Guimera,HannekeX09,KimL11}, because it seamlessly unifies Eucliean embedding, multi-views, and missing data together, and more effectively exploits mutual contexts among view rather than other generic network constraints, which has not been attempted by existing social network research. In fact, any application-dependent network priors or regularizations are straightforward to be characterized through the embedded points $\vx_i$. 
 
 
 %A unified community clustering effect, as the social network prior, may consequently  be modeled in the Euclidean space as well, for example, via
